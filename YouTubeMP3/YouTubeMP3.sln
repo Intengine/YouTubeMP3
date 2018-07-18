@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeMP3", "YouTubeMP3\YouTubeMP3.csproj", "{DC4103F9-2757-4BC5-B761-B2EFFFCB2948}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeMP3", "YouTubeMP3.csproj", "{DC4103F9-2757-4BC5-B761-B2EFFFCB2948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3E5E0FF3-46F1-44D9-B944-F8E6D317E0C6}
+		SolutionGuid = {B1887DE5-08DB-4648-84BB-21763968609E}
 	EndGlobalSection
 EndGlobal
