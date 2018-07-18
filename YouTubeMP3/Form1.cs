@@ -1,19 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace YouTubeMP3
 {
-    public partial class Form1 : Form
+    public partial class formMain : Form
     {
-        public Form1()
+        public formMain()
         {
             InitializeComponent();
+        }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Document.GetElementById("youtube-url").SetAttribute("value", textBox1.Text);
+        }
+
+        private void buttonBrowse_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Document.GetElementById("submit").InvokeMember("click");
+        }
+
+        private void buttonDownload_Click(object sender, EventArgs e)
+        {
+            HtmlElement dl_link = webBrowser1.Document.GetElementById("dl_link");
+            HtmlElementCollection link = dl_link.GetElementsByTagName("a");
+
+            string Url = link[0].GetAttribute("href");
+
+            System.Diagnostics.Process.Start(Url);
         }
     }
 }
