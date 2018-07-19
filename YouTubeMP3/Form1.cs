@@ -23,7 +23,7 @@ namespace YouTubeMP3
                     var youtube = YouTube.Default;
                     var video = await youtube.GetVideoAsync(textURL.Text);
 
-                    labelStatus.Text = "Downloading...";
+                    labelStatus.Text = "Downloading... Please wait...";
                     File.WriteAllBytes(fbd.SelectedPath + video.FullName, await video.GetBytesAsync());
 
                     var inputFile = new MediaFile { Filename = fbd.SelectedPath + video.FullName };
@@ -38,6 +38,11 @@ namespace YouTubeMP3
                     labelStatus.Text = "Completed!";
                 }
             }
+        }
+
+        private void buttonLogo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.intengine.pl");
         }
     }
 }

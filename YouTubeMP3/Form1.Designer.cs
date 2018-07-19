@@ -32,18 +32,19 @@
             this.buttonDownload = new System.Windows.Forms.Button();
             this.labelURL = new System.Windows.Forms.Label();
             this.labelStatus = new System.Windows.Forms.Label();
+            this.buttonLogo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textURL
             // 
-            this.textURL.Location = new System.Drawing.Point(53, 69);
+            this.textURL.Location = new System.Drawing.Point(53, 133);
             this.textURL.Name = "textURL";
             this.textURL.Size = new System.Drawing.Size(327, 20);
             this.textURL.TabIndex = 0;
             // 
             // buttonDownload
             // 
-            this.buttonDownload.Location = new System.Drawing.Point(386, 67);
+            this.buttonDownload.Location = new System.Drawing.Point(386, 131);
             this.buttonDownload.Name = "buttonDownload";
             this.buttonDownload.Size = new System.Drawing.Size(75, 23);
             this.buttonDownload.TabIndex = 1;
@@ -54,7 +55,7 @@
             // labelURL
             // 
             this.labelURL.AutoSize = true;
-            this.labelURL.Location = new System.Drawing.Point(12, 72);
+            this.labelURL.Location = new System.Drawing.Point(12, 136);
             this.labelURL.Name = "labelURL";
             this.labelURL.Size = new System.Drawing.Size(32, 13);
             this.labelURL.TabIndex = 2;
@@ -63,17 +64,28 @@
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Location = new System.Drawing.Point(196, 92);
+            this.labelStatus.Location = new System.Drawing.Point(196, 156);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(46, 13);
             this.labelStatus.TabIndex = 3;
             this.labelStatus.Text = "Status...";
             // 
+            // buttonLogo
+            // 
+            this.buttonLogo.Image = global::YouTubeMP3.Properties.Resources.logo;
+            this.buttonLogo.Location = new System.Drawing.Point(12, 12);
+            this.buttonLogo.Name = "buttonLogo";
+            this.buttonLogo.Size = new System.Drawing.Size(448, 93);
+            this.buttonLogo.TabIndex = 4;
+            this.buttonLogo.UseVisualStyleBackColor = true;
+            this.buttonLogo.Click += new System.EventHandler(this.buttonLogo_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 173);
+            this.ClientSize = new System.Drawing.Size(472, 184);
+            this.Controls.Add(this.buttonLogo);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelURL);
             this.Controls.Add(this.buttonDownload);
@@ -93,5 +105,6 @@
         private System.Windows.Forms.Button buttonDownload;
         private System.Windows.Forms.Label labelURL;
         private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Button buttonLogo;
     }
 }
