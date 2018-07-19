@@ -28,69 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonOK = new System.Windows.Forms.Button();
-            this.buttonBrowse = new System.Windows.Forms.Button();
+            this.textURL = new System.Windows.Forms.TextBox();
             this.buttonDownload = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.labelURL = new System.Windows.Forms.Label();
+            this.labelStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textURL
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // buttonOK
-            // 
-            this.buttonOK.Location = new System.Drawing.Point(386, 67);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
-            this.buttonOK.TabIndex = 1;
-            this.buttonOK.Text = "&OK";
-            this.buttonOK.UseVisualStyleBackColor = true;
-            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
-            // 
-            // buttonBrowse
-            // 
-            this.buttonBrowse.Location = new System.Drawing.Point(385, 96);
-            this.buttonBrowse.Name = "buttonBrowse";
-            this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
-            this.buttonBrowse.TabIndex = 2;
-            this.buttonBrowse.Text = "&Browse";
-            this.buttonBrowse.UseVisualStyleBackColor = true;
-            this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
+            this.textURL.Location = new System.Drawing.Point(53, 69);
+            this.textURL.Name = "textURL";
+            this.textURL.Size = new System.Drawing.Size(327, 20);
+            this.textURL.TabIndex = 0;
             // 
             // buttonDownload
             // 
-            this.buttonDownload.Location = new System.Drawing.Point(385, 125);
+            this.buttonDownload.Location = new System.Drawing.Point(386, 67);
             this.buttonDownload.Name = "buttonDownload";
             this.buttonDownload.Size = new System.Drawing.Size(75, 23);
-            this.buttonDownload.TabIndex = 3;
-            this.buttonDownload.Text = "&Download";
+            this.buttonDownload.TabIndex = 1;
+            this.buttonDownload.Text = "Download";
             this.buttonDownload.UseVisualStyleBackColor = true;
-            this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
             // 
-            // webBrowser1
+            // labelURL
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(13, 115);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(220, 46);
-            this.webBrowser1.TabIndex = 4;
+            this.labelURL.AutoSize = true;
+            this.labelURL.Location = new System.Drawing.Point(12, 72);
+            this.labelURL.Name = "labelURL";
+            this.labelURL.Size = new System.Drawing.Size(32, 13);
+            this.labelURL.TabIndex = 2;
+            this.labelURL.Text = "URL:";
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Location = new System.Drawing.Point(196, 92);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(46, 13);
+            this.labelStatus.TabIndex = 3;
+            this.labelStatus.Text = "Status...";
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 173);
-            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.labelStatus);
+            this.Controls.Add(this.labelURL);
             this.Controls.Add(this.buttonDownload);
-            this.Controls.Add(this.buttonBrowse);
-            this.Controls.Add(this.buttonOK);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textURL);
+            this.MaximizeBox = false;
             this.Name = "formMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YouTubeMP3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,10 +88,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.Button buttonBrowse;
+        private System.Windows.Forms.TextBox textURL;
         private System.Windows.Forms.Button buttonDownload;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Label labelURL;
+        private System.Windows.Forms.Label labelStatus;
     }
 }
