@@ -49,6 +49,7 @@
             this.buttonDownload.TabIndex = 1;
             this.buttonDownload.Text = "Download";
             this.buttonDownload.UseVisualStyleBackColor = true;
+            this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
             // 
             // labelURL
             // 
